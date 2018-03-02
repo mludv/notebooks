@@ -1,0 +1,2 @@
+#!/bin/env bash
+docker run -d -v $PWD/work:/home/jovyan/work --net=host --pid=host -e TINI_SUBREAPER=true sparklab jupyter lab
